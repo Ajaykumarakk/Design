@@ -1,5 +1,8 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+     
+
+
 *@
 @{
 }
@@ -15,7 +18,9 @@
             <div class="col-md-4">
                 <div class="header_social_icon">
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        
+                        <li><a href="#"><img class="fa fa-facebook" src="~/images/search.png"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                
                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
@@ -23,7 +28,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="call_text"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_15">(+71) 8522369417</span></a></div>
+                <div class="call_text"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_15">+91 9159880640</span></a></div>
             </div>
         </div>
     </div>
@@ -39,25 +44,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                   
+                        <a class="nav-link text-bg-success" asp-area="" asp-controller="Design" asp-action="About">About </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link text-bg-success" asp-area="" asp-controller="Design" asp-action="Blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
+                        <a class="nav-link text-bg-success" asp-area="" asp-controller="Design" asp-action="Contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
+                        <a class="nav-link text-bg-success" asp-area="" asp-controller="Design" asp-action="Index">Index</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
+                        <a class="nav-link text-bg-success" asp-area="" asp-controller="Design" asp-action="Services">Services</a>
                     </li>
                 </ul>
+            </div>
+                
                 <form class="form-inline my-2 my-lg-0">
                     <div class="serach_icon"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
                 </form>
-            </div>
         </nav>
     </div>
 </div>
@@ -74,7 +81,7 @@
                 </div>
             </div>
             <div class="col-md-5 padding_right0">
-                <div class="about_img"><img src="images/about-img.png"></div>
+                <div class="about_img"><img src="~/images/about-img.png"></div>
             </div>
         </div>
     </div>
@@ -86,7 +93,7 @@
         <div class="footer_section_2">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="footeer_logo"><img src="images/logo.png"></div>
+                    <div class="footeer_logo"><img src="~/images/logo.png"></div>
                     <p class="lorem_text">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
                 </div>
                 <div class="col-lg-3">
