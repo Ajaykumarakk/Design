@@ -24,32 +24,25 @@
     <link rel="stylesheet" href="~/css/slick.css" />
     <link rel="stylesheet" href="~/css/style.css" />
 </head>
-<body>
-    <header>
+<body >
+    <header class="bg-dark">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
+            <div class="container" >
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Design" asp-action="About">About </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Design" asp-action="Blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Design" asp-action="Contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Design" asp-action="Index">Index</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Design" asp-action="Services">Services</a>
-                        </li>
-                    </ul>
+                <div class="call_text_main">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="call_text"><a href="#"><span class="padding_left_15">Location</span></a></div>
+                            </div>
+                          </div>
+                       </div>
+                    </div>
+                <div class="col-md-4">
+                    <div class="call_text"><a href="#"><span class="padding_left_15">+91 9159880640</span></a></div>
                 </div>
             </div>
         </nav>
@@ -60,11 +53,11 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    @*<footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2023 - Mvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
+    </footer>*@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
