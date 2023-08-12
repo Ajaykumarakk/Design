@@ -4,11 +4,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Mvc.Repository;
+using Mvc.Models;
 
 namespace Mvc.Controllers
 {
     public class DesignController : Controller
     {
+        DesignRepository obj;
+
+        public DesignController()
+        {
+            obj = new DesignRepository();
+        }
         // GET: DesignController
         public ActionResult About()
         {
@@ -22,8 +30,9 @@ namespace Mvc.Controllers
         }
 
         // GET: DesignController/Create
-        public ActionResult Contact()
+        public ActionResult Contact(DesignveiwModel res)
         {
+            obj.Insertinfo(res);
             return View();
         }
         public ActionResult Index()
